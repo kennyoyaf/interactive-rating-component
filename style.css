@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+
+}
+
+.main-container ul li button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(216, 12%, 54%);
+}
+
+.main-container ul li button:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+p{
+    line-height: 1.8;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Overpass', 'San-serif';
+}
+
+.main-container,.thankyou-container{
+    background-color: hsl(213, 19%, 18%);
+    width: 90%;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.main-container .star{
+    border-radius: 50%;
+    border: 1px solid hsl(213, 19%, 18%);
+    padding: 10px;
+    background-color: hsl(213, 19%, 22%);
+    margin-bottom: 20px;
+}
+
+.main-container .first{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+.main-container .main-text{
+    color: hsl(216, 12%, 54%);
+    padding-bottom: 2rem;
+}
+
+.main-container .submit{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+    margin-bottom: 10px;
+}
+
+.main-container .submit:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.thankyou-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.thankyou-container .thanks-logo{
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.thankyou-container .meek{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 22%);
+    padding:5px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.thankyou-container .thanks{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.thankyou-container .thanks-text{
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.attribution{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: .7rem;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width: 1440px){
+.main-container,.thankyou-container{
+    width: 25%;
+}
+.main-container ul li button{
+    width: 3rem;
+    height: 3rem;
+}
+}
